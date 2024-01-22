@@ -1,8 +1,8 @@
 # React Native Assessment
 
-This repository contains an assessment task which is designed for evaluating candidates, who are in the job application process, and intended to help us evaluate the approaches and abilities of those participating.
+This repository contains an assessment task which is designed to evaluate candidates in the job application process and to help us assess the approaches and abilities of participants.
 
-Within the task, we expect you to complete the project described below. While completing the task, please make sure that you are delivering the best work you can, which will assist us in making an accurate evaluation.
+In the task, you are expected to complete the project described below. While completing the task, please make sure that you are delivering the best work you can to assist us in an accurate evaluation.
 
 
 ## Requirements
@@ -26,9 +26,9 @@ Within the task, we expect you to complete the project described below. While co
 
 ## How to Get Started?
 
-You can start by creating a React Native project base.
+Begin by creating a React Native project base.
 
-Then, you'll need to transfer this codebase to a git repository and share the repository address upon completion.
+Next, transfer the codebase to a git repository and share the repository address upon completion.
 
 
 ## Product Expectations
@@ -115,7 +115,7 @@ https://github.com/Teknasyon/assessments-react-native/assets/866558/0323671b-a32
 
 ## Your Questions
 
-You can send your questions regarding the assessments to [eser@teknasyon.com](mailto:eser@teknasyon.com).
+You can send your questions regarding the assessment to [eser@teknasyon.com](mailto:eser@teknasyon.com).
 
 
 ## License
