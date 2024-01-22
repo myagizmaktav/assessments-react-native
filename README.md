@@ -10,15 +10,13 @@ Within the task, we expect you to complete the project described below. While co
 ### Technologies to be used:
 
 - JavaScript and/or TypeScript
-- Electrode Native (https://github.com/electrode-io/electrode-native)
 - Git
 
 
 ### Constraints and Conventions:
 
 - Use of vector file formats for images
-- Use of only functional components in React
-- Managing form values with state management
+- Use of only functional components
 - Applying atomic design principles
 - Developing the project with frequent commits on version control system
 - Use of "conventional commits" convention for commit messages
@@ -28,7 +26,7 @@ Within the task, we expect you to complete the project described below. While co
 
 ## How to Get Started?
 
-You can start by creating a Electrode Native project base.
+You can start by creating a React Native project base.
 
 Then, you'll need to transfer this codebase to a git repository and share the repository address upon completion.
 
@@ -44,7 +42,11 @@ https://github.com/Teknasyon/assessments-react-native/assets/866558/0323671b-a32
 
 ## Engineering Expectations
 
-- A miniapp should be created with Electrode Native. Please see: https://native.electrode.io/cli-commands/create-miniapp
+- A miniapp should be created with React Native.
+
+- This app should be interacting with native OS (i.e. iOS, Android, etc.)
+
+- You may use a framework like Electrode Native or Expo
 
 - Screen you've picked should be popped up when the first button is clicked
 
@@ -52,7 +54,7 @@ https://github.com/Teknasyon/assessments-react-native/assets/866558/0323671b-a32
 
   ![Screenshot of the project](./art/xcode.jpg)
 
-- Sample code to be called when the button is clicked:
+- Sample Electrode code to be called when the button is clicked:
   ```swift
   // Function to be called
   openScreen(screenName: "LandingLatestScreen")
@@ -77,7 +79,7 @@ https://github.com/Teknasyon/assessments-react-native/assets/866558/0323671b-a32
 
 - When the close button in the screen design is clicked, the React Native interface should be closed and returned to native.
 
-- The process of closing the RN interface and returning to native can be done by creating an electrode API. Sample code:
+- The process of closing the RN interface and returning to native can be done by creating an API. Sample Electrode code:
   ```javascript
   import { LandingApi } from “@youtube/landing-api”;
 
