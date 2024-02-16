@@ -3,29 +3,23 @@ import { View, Text, StyleSheet } from 'react-native';
 import { OptionsCheck } from '../optionsCheck/optionsCheck';
 
 // todo Make isEnabled take from parent component
-export const YearlyAccess = () => {
+export const DayFreeTrial = () => {
   const [isEnabled, setIsEnabled] = React.useState(false);
   return (
-    <View style={[styles.container]}>
+    <View
+      style={[styles.container, isEnabled ? styles.containerIsEnabled : null]}
+    >
       <View style={styles.leftSide}>
         <Text adjustsFontSizeToFit={true} style={styles.text}>
-          YEARLY ACCESS
+          30-DAY FREE TRIAL
         </Text>
         <View style={styles.subTitleWrapper}>
-          <Text
-            adjustsFontSizeToFit={true}
-            style={[styles.title, styles.titleLight]}
-          >
-            $0,11/day
-          </Text>
           <Text adjustsFontSizeToFit={true} style={styles.title}>
-            $39.99/year
+            then $6.99/week
           </Text>
         </View>
       </View>
-      <View style={[styles.tag, isEnabled ? styles.tagEnabled : null]}>
-        <Text style={styles.tagText}>SAVE %89</Text>
-      </View>
+
       <View style={styles.rightSide}>
         <OptionsCheck
           isEnabled={isEnabled}
@@ -72,14 +66,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
     alignItems: 'baseline',
   },
-  tagText: {
-    color: 'white',
-    fontSize: 15,
-    fontFamily: 'youtubeSans',
-    textAlign: 'center',
-    textAlignVertical: 'center',
-    paddingBottom: 2,
-  },
+
   title: {
     color: 'black',
     fontSize: 14,
@@ -93,19 +80,7 @@ const styles = StyleSheet.create({
     fontFamily: 'youtubeSansLight',
     color: 'rgba(114, 115, 121, 1)',
   },
-  tag: {
-    backgroundColor: 'rgba(255, 0, 0, 1)',
-    borderRadius: 30,
-    width: 100,
-    justifyContent: 'center',
-    alignContent: 'center',
-    position: 'absolute',
-    right: 20,
-    top: -10,
-  },
-  tagEnabled: {
-    backgroundColor: '#23D842',
-  },
+
   seperator: {
     height: 1,
     width: '100%',

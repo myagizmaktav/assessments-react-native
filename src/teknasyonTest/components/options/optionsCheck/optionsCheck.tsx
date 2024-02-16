@@ -21,7 +21,7 @@ export const OptionsCheck = (props: OptionsCheckProps) => {
         style={[styles.check, props.isEnabled ? styles.checkEnabled : null]}
       >
         {props.isEnabled ? (
-          <TickLogo width={20} height={20} fill="white"></TickLogo>
+          <TickLogo width={15} height={15} fill="white"></TickLogo>
         ) : null}
       </View>
     </TouchableOpacity>
