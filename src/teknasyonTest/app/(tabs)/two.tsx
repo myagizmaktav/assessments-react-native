@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
   contentWrapper: {
     flex: 1,
     width: '100%',
-    padding: 10,
+    padding: 15,
   },
   premiumLogo: {
     flexDirection: 'row',

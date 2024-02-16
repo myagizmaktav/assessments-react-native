@@ -29,7 +29,7 @@ export const Content = () => {
       <View style={styles.seperator}></View>
       <Features
         Logo={<GoogleMeetLogo width={25} height={25} />}
-        title="Ad-Free Browsing"
+        title="Co-watch with Google Meet"
         text="Gorem ipsum dolor sit amet, consectetur adipiscing elit."
       ></Features>
       <View style={{ marginBottom: 20 }}></View>

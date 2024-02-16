@@ -1,3 +1,5 @@
+import { CloseLogo } from '@/assets/logos/closeLogo';
+import { YoutubeLogo } from '@/assets/logos/youtubeLogo';
 import { FontAwesome } from '@expo/vector-icons';
 import { View, TouchableOpacity, Text, StyleSheet } from 'react-native';
 
@@ -5,12 +7,13 @@ export const Header = () => {
   return (
     <View style={styles.header}>
       <View style={styles.youtubeLogo}>
-        <FontAwesome name="youtube-play" size={75} color="#FFF" />
-        <Text style={styles.youtubeTitle}>Youtube</Text>
+        {/* <FontAwesome name="youtube-play" size={55} color="#FFF" />
+        <Text style={styles.youtubeTitle}>YouTube</Text> */}
+        <YoutubeLogo width={230} height={230} fill={'#fff'} />
       </View>
       <TouchableOpacity style={styles.closeButton}>
         <View style={styles.closeButtonBackground}>
-          <FontAwesome name="close" size={20} color="#FFF" />
+          <CloseLogo width={12} height={12} fill={'#FFF'} />
         </View>
       </TouchableOpacity>
     </View>
@@ -34,7 +37,7 @@ const styles = StyleSheet.create({
   },
   youtubeLogo: {
     position: 'absolute',
-    top: 0,
+    top: 20,
     left: 0,
     right: 0,
     bottom: 0,
@@ -44,15 +47,16 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   youtubeTitle: {
-    marginLeft: 10,
-    fontSize: 30,
+    letterSpacing: 0.1,
+    marginLeft: 5,
+    fontSize: 45,
     fontWeight: 'bold',
-    fontFamily: 'youtubeSansBold',
+    fontFamily: 'youtubeSans',
     color: '#FFF',
   },
   header: {
     paddingTop: 20,
-    minHeight: 170,
+    minHeight: 160,
     width: '100%',
     backgroundColor: '#FF0000',
     position: 'relative',
