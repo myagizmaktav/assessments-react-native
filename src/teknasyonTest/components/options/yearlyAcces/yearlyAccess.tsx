@@ -2,7 +2,6 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { OptionsCheck } from '../optionsCheck/optionsCheck';
 
-// todo Make isEnabled take from parent component
 export const YearlyAccess = () => {
   const [isEnabled, setIsEnabled] = React.useState(false);
   return (
