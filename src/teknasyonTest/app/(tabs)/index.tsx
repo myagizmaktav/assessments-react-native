@@ -1,8 +1,6 @@
 import { Button, StyleSheet, TouchableOpacity } from "react-native";
 import { router } from "expo-router";
-
 import { Text, View } from "react-native";
-
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>
@@ -33,7 +31,6 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 13,
-
     color: "white",
   },
 });
