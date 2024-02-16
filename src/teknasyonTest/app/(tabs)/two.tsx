@@ -2,15 +2,10 @@ import { StyleSheet, TouchableOpacity, View, Text } from 'react-native';
 
 import { Header } from '@/components/header/header';
 import { PremiumLogo } from '@/components/premiumLogo/premiumLogo';
-import { SaturnLogo } from '@/assets/logos/saturnLogo';
-import { Features } from '@/components/features/features';
-import { DownloadLogo } from '../../assets/logos/downloadLogo';
-import { GoogleMeetLogo } from '@/assets/logos/googleMeetLogo';
 import { Content } from '@/components/content/content';
-import { WarrantyLogo } from '@/assets/logos/warrantyLogo';
 import { Footer } from '@/components/footer/footer';
 
-export default function TabTwoScreen() {
+export default function MainPage() {
   return (
     <View style={styles.container}>
       <Header />
