@@ -1,19 +1,19 @@
 import React from 'react';
 import renderer, { ReactTestRendererJSON } from 'react-test-renderer';
 
-import ButtonPage from '../(tabs)/index';
-import MainPage from '../(tabs)/two';
+import ButtonPage from '../app/(tabs)/index';
+import MainPage from '../app/(tabs)/two';
 import { FreeTrial } from '@/components/options/freeTrial/freeTrial';
 import { YearlyAccess } from '@/components/options/yearlyAcces/yearlyAccess';
-import { DayFreeTrial } from '../../components/options/dayFreeTrial/dayFreeTrial';
-import { Features } from '../../components/features/features';
+import { DayFreeTrial } from '../components/options/dayFreeTrial/dayFreeTrial';
+import { Features } from '../components/features/features';
 import { SaturnLogo } from '@/assets/logos/saturnLogo';
 import { OptionsCheck } from '@/components/options/optionsCheck/optionsCheck';
-import { FreeTrialSwitch } from '../../components/options/freeTrial/freeTrialSwitch/freeTrialSwitch';
+import { FreeTrialSwitch } from '../components/options/freeTrial/freeTrialSwitch/freeTrialSwitch';
 import { Header } from '@/components/header/header';
 import { PremiumLogo } from '@/components/premiumLogo/premiumLogo';
 import { Content } from '@/components/content/content';
-import { Footer } from '../../components/footer/footer';
+import { Footer } from '../components/footer/footer';
 
 describe('Initial Button', () => {
   it('renders correctly', () => {

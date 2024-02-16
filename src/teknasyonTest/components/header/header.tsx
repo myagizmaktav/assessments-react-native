@@ -1,6 +1,6 @@
 import { CloseLogo } from '@/assets/logos/closeLogo';
 import { YoutubeLogo } from '@/assets/logos/youtubeLogo';
-import { FontAwesome } from '@expo/vector-icons';
+import React, { BackHandler } from 'react-native';
 import { View, TouchableOpacity, Text, StyleSheet } from 'react-native';
 
 export const Header = () => {
@@ -11,7 +11,12 @@ export const Header = () => {
         <Text style={styles.youtubeTitle}>YouTube</Text> */}
         <YoutubeLogo width={230} height={230} fill={'#fff'} />
       </View>
-      <TouchableOpacity style={styles.closeButton}>
+      <TouchableOpacity
+        style={styles.closeButton}
+        onPress={() => {
+          BackHandler.exitApp();
+        }}
+      >
         <View style={styles.closeButtonBackground}>
           <CloseLogo width={12} height={12} fill={'#FFF'} />
         </View>
